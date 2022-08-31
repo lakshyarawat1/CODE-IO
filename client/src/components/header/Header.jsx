@@ -1,11 +1,26 @@
+import {AppBar,  Box, Typography, styled } from '@mui/material'
 
+const Tagline = styled(Typography)`
+    font-weight : 600;
+`
+
+const MyNavBar = styled(AppBar)`
+    height : 70px;
+    padding-top : 2em
+`
 
 const Header = () => {
     return (
-        <div>
-            This is from header
-        </div>
+        <>
+            <MyNavBar>
+                 <Box>
+                    <Tagline>
+                        CODE-IO
+                    </Tagline>
+                </Box>
+            </MyNavBar>
+        </>
     )
 }
 
-export default Header
+export default Header;
